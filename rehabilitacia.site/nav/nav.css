@@ -1,0 +1,31 @@
+
+/* падащо меню*/
+.nav li, .nav li a {
+    float: left;
+}
+
+.nav li {
+    position: relative;
+    list-style: none;
+}
+
+
+.nav li a{
+    text-decoration: none;
+    display: block;
+    border: 1px solid #ccc;
+}
+/*sub nenu style*/
+
+.nav li ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    display: none;
+    z-index: 1;
+}
+.nav li:hover > ul {
+    display: block;
+}
+
